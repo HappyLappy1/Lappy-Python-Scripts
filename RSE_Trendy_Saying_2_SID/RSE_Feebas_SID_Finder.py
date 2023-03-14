@@ -1,4 +1,5 @@
 # Majority of this done by Shao. I (Lappy) just made it look pretty, added user inputs, and made an infographic.
+# Infographic: https://github.com/HappyLappy1/Lappy-Python-Scripts/blob/main/RSE_Trendy_Saying_2_SID/RSE_Feebas_Tiles_Index.png
 def advance(seed):
     return (0x41C64E6D * seed + 0x00006073) & 0xFFFFFFFF
 
