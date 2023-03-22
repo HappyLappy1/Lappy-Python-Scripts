@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Mar 22 12:53:08 2023
-
-@author: parke
 """
 
 def XDRNG(seed):
