@@ -20,11 +20,13 @@ for i in range(65536):
     seed = (IV_1 << 16) + i
     if (XDRNG(seed) >> 16) & 0x7FFF == IV_2:
         seed_list.append(seed)
+        seed_list.append(seed ^ 0x80000000)
 sids = []
 for s in seed_list:
     advance = 12
     sheed = s
     while advance > 0 and (sheed >> 16) != TID:
+        
         sid = sheed >> 16
         sheed = XDRNGR(sheed)
         advance = advance - 1
