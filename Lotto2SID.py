@@ -94,7 +94,7 @@ def GetSID(GrSeed, TID, Day, Month, DelayL, DelayH, HourL, HourH):
         if GrIseed in Gseeds_S:
             if (sidtid & 0xFFFF == TID):
                 print("SID:",sidtid >> 16, "Init. Seed:", hex(q))
-GetSID(getSeed(23267,30516,23187),9129,1,9,5000,65535,0,23)
+# GetSID(getSeed(23267,30516,23187),9129,1,9,5000,65535,0,23)
 GetSID(
     getSeed(int(input("Lotto 1:")), 
             int(input("Lotto 2:")),
